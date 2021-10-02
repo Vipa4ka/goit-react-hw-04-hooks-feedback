@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
+const Statistics = ({ GOOD, NEUTRAL, BAD, total, positivePercentage }) => (
   <ul>
-    <li>Good: {good}</li>
-    <li>Neutral: {neutral}</li>
-    <li>Bad: {bad}</li>
+    <li>GOOD: {GOOD}</li>
+    <li>NEUTRAL: {NEUTRAL}</li>
+    <li>BAD: {BAD}</li>
     <li>Total:{total}</li>
     <li>Positive feedback: {positivePercentage}%</li>
   </ul>
 );
 
 Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
+  GOOD: PropTypes.number.isRequired,
+  NEUTRAL: PropTypes.number.isRequired,
+  BAD: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
 };
